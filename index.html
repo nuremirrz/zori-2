@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Зарина Жанатаева — графический дизайнер</title>
+  <meta name="description" content="Графический дизайнер. Логотипы, фирменный стиль, печатная продукция, инфографика для Wildberries и Ozon, креативы для соцсетей." />
+
+  <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/x-icon" />
+
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Направляющие артборда: фоновый слой -->
+  <div class="guides" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <!--==================== ШАПКА ====================-->
+  <header class="header" id="header">
+    <nav class="nav">
+      <ul class="nav__group nav__group--left">
+        <li><a href="#about" class="nav__link">Обо мне</a></li>
+        <li><a href="#services" class="nav__link">Услуги</a></li>
+      </ul>
+
+      <a href="#top" class="nav__logo">Zori Design</a>
+
+      <ul class="nav__group nav__group--right">
+        <li><a href="#work" class="nav__link">Портфолио</a></li>
+        <li><a href="#contact" class="nav__link">Контакты</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Мобильное меню -->
+    <div class="menu" id="nav-menu">
+      <ul class="menu__list">
+        <li><a href="#about" class="menu__link">Обо мне</a></li>
+        <li><a href="#services" class="menu__link">Услуги</a></li>
+        <li><a href="#work" class="menu__link">Портфолио</a></li>
+        <li><a href="#experience" class="menu__link">Опыт</a></li>
+        <li><a href="#contact" class="menu__link">Контакты</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="top">
+    <!--==================== ГЛАВНЫЙ ЭКРАН ====================-->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow reveal">Графический дизайнер · Брендинг</p>
+          <h1 class="hero__title reveal">Зарина<br />Жанатаева</h1>
+          <p class="hero__lead reveal">
+            Собираю визуальную упаковку бренда — от логотипа
+            до карточки товара на маркетплейсе. В дизайне и медиа с 2017 года.
+          </p>
+          <a href="#contact" class="cta reveal">Обсудить проект</a>
+        </div>
+
+        <figure class="hero__figure reveal">
+          <img src="./assets/img/main_photo.jpeg" alt="Зарина Жанатаева, графический дизайнер" />
+        </figure>
+      </div>
+    </section>
+
+    <!--==================== ОБО МНЕ ====================-->
+    <section class="section section--about" id="about">
+      <span class="rail" aria-hidden="true">Обо мне</span>
+      <div class="container about__grid">
+        <div class="about__bio">
+          <p class="eyebrow reveal">Кто я</p>
+          <p class="about__text reveal">
+            Здравствуйте! Меня зовут Зарина. Занимаюсь живописью, дизайном
+            и изучением медиапродвижения с 2017 года. Зная внутренние процессы
+            и имея опыт работы SMM-менеджером, я понимаю, насколько важен
+            проект для заказчика.
+          </p>
+          <p class="about__text reveal">
+            Я несу ответственность за качество и результат своей работы. Вывожу
+            бренды на новый уровень с помощью грамотной визуальной упаковки
+            и вкладываю в проект все свои знания и умения.
+          </p>
+          <p class="signature reveal">Зарина</p>
+        </div>
+
+        <aside class="about__facts">
+          <div class="fact reveal">
+            <p class="fact__label">Образование</p>
+            <p class="fact__value">Академия дизайна и технологии «Сымбат»</p>
+          </div>
+          <div class="fact reveal">
+            <p class="fact__label">В профессии</p>
+            <p class="fact__value">С 2017 года</p>
+          </div>
+          <div class="fact reveal">
+            <p class="fact__label">География</p>
+            <p class="fact__value">ОАЭ · Катар · Казахстан</p>
+          </div>
+          <figure class="about__mark reveal">
+            <img src="./assets/img/logo.png" alt="Академия дизайна и технологии «Сымбат»" />
+          </figure>
+        </aside>
+      </div>
+    </section>
+
+    <!--==================== УСЛУГИ ====================-->
+    <section class="section section--services" id="services">
+      <span class="rail" aria-hidden="true">Услуги</span>
+      <div class="container">
+        <p class="eyebrow reveal">Чем помогу бренду</p>
+        <h2 class="section__title reveal">Что я делаю</h2>
+
+        <ul class="services">
+          <li class="service reveal">
+            <h3 class="service__name">Логотип</h3>
+            <p class="service__desc">Знак, который читается в аватарке и на вывеске одинаково хорошо.</p>
+          </li>
+          <li class="service reveal">
+            <h3 class="service__name">Фирменный стиль</h3>
+            <p class="service__desc">Палитра, шрифты, паттерны и правила — всё, чтобы бренд узнавали.</p>
+          </li>
+          <li class="service reveal">
+            <h3 class="service__name">Печатная продукция</h3>
+            <p class="service__desc">Визитки, сертификаты, бирки, упаковка — с подготовкой макетов в печать.</p>
+          </li>
+          <li class="service reveal">
+            <h3 class="service__name">Карточки для маркетплейсов</h3>
+            <p class="service__desc">Инфографика и карточки товаров для Wildberries и Ozon.</p>
+          </li>
+          <li class="service reveal">
+            <h3 class="service__name">Креативы для соцсетей</h3>
+            <p class="service__desc">Обложки, сторис и посты в единой визуальной системе.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--==================== БЕГУЩАЯ СТРОКА ====================-->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__row">Логотип <i>·</i> Фирменный стиль <i>·</i> Печатная продукция <i>·</i> Инфографика <i>·</i> Соцсети <i>·</i></span>
+        <span class="marquee__row">Логотип <i>·</i> Фирменный стиль <i>·</i> Печатная продукция <i>·</i> Инфографика <i>·</i> Соцсети <i>·</i></span>
+      </div>
+    </div>
+
+    <!--==================== ПОРТФОЛИО ====================-->
+    <section class="section section--work" id="work">
+      <span class="rail" aria-hidden="true">Портфолио</span>
+      <div class="container work__head">
+        <p class="eyebrow reveal">Избранные проекты</p>
+        <h2 class="section__title reveal">Портфолио</h2>
+        <p class="work__hint reveal">Листайте вбок</p>
+      </div>
+
+      <div class="strip" id="strip">
+        <figure class="strip__item">
+          <img src="./assets/img/lilostore1.jpeg" alt="Lilo Store — фирменный стиль" loading="lazy" />
+          <figcaption>Lilo Store <i>Фирменный стиль</i></figcaption>
+        </figure>
+        <figure class="strip__item">
+          <img src="./assets/img/lilostore3.jpeg" alt="Lilo Store — визуальная система" loading="lazy" />
+          <figcaption>Lilo Store <i>Визуальная система</i></figcaption>
+        </figure>
+        <figure class="strip__item">
+          <img src="./assets/img/kepler1.jpeg" alt="Kepler — логотип" loading="lazy" />
+          <figcaption>Kepler <i>Логотип</i></figcaption>
+        </figure>
+        <figure class="strip__item">
+          <img src="./assets/img/kepler2.jpeg" alt="Kepler — носители фирменного стиля" loading="lazy" />
+          <figcaption>Kepler <i>Носители стиля</i></figcaption>
+        </figure>
+        <figure class="strip__item">
+          <img src="./assets/img/trendsetter1.jpeg" alt="Trendsetter — брендинг" loading="lazy" />
+          <figcaption>Trendsetter <i>Брендинг</i></figcaption>
+        </figure>
+        <figure class="strip__item">
+          <img src="./assets/img/trendsetter3.jpeg" alt="Trendsetter — печатная продукция" loading="lazy" />
+          <figcaption>Trendsetter <i>Печатная продукция</i></figcaption>
+        </figure>
+        <figure class="strip__item">
+          <img src="./assets/img/trendsetter4.jpeg" alt="Trendsetter — упаковка" loading="lazy" />
+          <figcaption>Trendsetter <i>Упаковка</i></figcaption>
+        </figure>
+        <figure class="strip__item">
+          <img src="./assets/img/trendsetter5.jpeg" alt="Trendsetter — соцсети" loading="lazy" />
+          <figcaption>Trendsetter <i>Соцсети</i></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!--==================== ОПЫТ ====================-->
+    <section class="section section--exp" id="experience">
+      <span class="rail" aria-hidden="true">Опыт</span>
+      <div class="container">
+        <p class="eyebrow reveal">Где работала</p>
+        <h2 class="section__title reveal">Опыт</h2>
+
+        <div class="exp">
+          <article class="exp__item reveal">
+            <p class="exp__meta">ОАЭ · Дубай</p>
+            <p class="exp__text">
+              Графический дизайнер в сфере медицины. Работа с дизайнером
+              и основателем QLIVE Company — компании, выпустившей официальную
+              лицензионную продукцию к Чемпионату мира по футболу 2022.
+            </p>
+          </article>
+          <article class="exp__item reveal">
+            <p class="exp__meta">Катар</p>
+            <p class="exp__text">
+              Магазин мультибрендовой детской одежды и онлайн-магазин
+              премиальных сумок и часов.
+            </p>
+          </article>
+          <article class="exp__item reveal">
+            <p class="exp__meta">2019 — 2023 · SMM</p>
+            <p class="exp__text">
+              MOST Hub, MOST Ventures, MOST Business Incubator, Elements Agency,
+              Shopogolik.kz, Trip&amp;I.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ==================== ОТЗЫВЫ (готовый блок) ====================
+      Раскомментируйте, когда появятся реальные отзывы.
+      Скриншоты положите в assets/img/ и подставьте пути.
+
+    <section class="section section--reviews" id="reviews">
+      <span class="rail" aria-hidden="true">Отзывы</span>
+      <div class="container">
+        <p class="eyebrow">Что говорят клиенты</p>
+        <h2 class="section__title">Отзывы</h2>
+        <div class="strip">
+          <figure class="strip__item">
+            <img src="./assets/img/review1.jpg" alt="Отзыв клиента" loading="lazy" />
+            <figcaption>Имя клиента <i>Проект</i></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    -->
+  </main>
+
+  <!--==================== КОНТАКТЫ ====================-->
+  <footer class="footer" id="contact">
+    <span class="rail" aria-hidden="true">Контакты</span>
+    <div class="container footer__grid">
+      <div class="footer__left">
+        <p class="eyebrow reveal">Свободна для проектов</p>
+        <h2 class="footer__title reveal">Расскажите<br />о своём проекте</h2>
+        <a href="https://wa.me/77473418628" class="cta reveal" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      </div>
+
+      <div class="footer__right">
+        <p class="footer__label reveal">Или выберите удобный способ связи</p>
+        <ul class="socials reveal">
+          <li>
+            <a href="https://wa.me/77473418628" target="_blank" rel="noopener">
+              <img src="./assets/img/whatsapp.svg" alt="" aria-hidden="true" />
+              <span>WhatsApp</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/zorizorii" target="_blank" rel="noopener">
+              <img src="./assets/img/telegram.svg" alt="" aria-hidden="true" />
+              <span>Telegram</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/zarina.zhanatayeva/" target="_blank" rel="noopener">
+              <img src="./assets/img/instagram.svg" alt="" aria-hidden="true" />
+              <span>Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <span class="footer__mark">Zori Design</span>
+      <span class="footer__copy">© <span id="year">2026</span></span>
+    </div>
+  </footer>
+
+  <a href="#top" class="to-top" id="to-top" aria-label="Наверх">↑</a>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
