@@ -1,7 +1,7 @@
 /*===============================================================
-  ZORI DESIGN — скрипты
-  Без зависимостей: меню, появление при скролле, перетаскивание
-  ленты портфолио, подсветка активного пункта меню, кнопка «наверх».
+  ЗАРИНА ЖАНАТАЕВА — скрипты
+  Без зависимостей: меню, появление при скролле,
+  подсветка активного пункта меню, кнопка «наверх».
 ================================================================*/
 
 (function () {
@@ -83,39 +83,6 @@
   } else {
     revealItems.forEach((el) => el.classList.add('is-visible'));
   }
-
-  /*=============== ПЕРЕТАСКИВАНИЕ ЛЕНТЫ ПОРТФОЛИО ===============*/
-  document.querySelectorAll('.strip').forEach((strip) => {
-    let isDown = false;
-    let startX = 0;
-    let startScroll = 0;
-
-    strip.addEventListener('pointerdown', (e) => {
-      isDown = true;
-      startX = e.clientX;
-      startScroll = strip.scrollLeft;
-      strip.classList.add('is-dragging');
-      strip.setPointerCapture(e.pointerId);
-    });
-
-    strip.addEventListener('pointermove', (e) => {
-      if (!isDown) return;
-      strip.scrollLeft = startScroll - (e.clientX - startX);
-    });
-
-    const stop = (e) => {
-      if (!isDown) return;
-      isDown = false;
-      strip.classList.remove('is-dragging');
-      if (e.pointerId !== undefined && strip.hasPointerCapture(e.pointerId)) {
-        strip.releasePointerCapture(e.pointerId);
-      }
-    };
-
-    strip.addEventListener('pointerup', stop);
-    strip.addEventListener('pointercancel', stop);
-    strip.addEventListener('pointerleave', stop);
-  });
 
   /*=============== ГОД В ПОДВАЛЕ ===============*/
   const year = document.getElementById('year');

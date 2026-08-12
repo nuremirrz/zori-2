@@ -3,37 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Зарина Жанатаева — графический дизайнер</title>
-  <meta name="description" content="Графический дизайнер. Логотипы, фирменный стиль, печатная продукция, инфографика для Wildberries и Ozon, креативы для соцсетей." />
+  <title>Зарина Жанатаева — современная художница</title>
+  <meta name="description" content="Современная художница. Интерьерные картины: абстракция, ботанические мотивы, современный символизм. Алматы, доставка по Казахстану и международная." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Зарина Жанатаева — современная художница" />
+  <meta property="og:description" content="Исследую женственность, внутреннюю силу и трансформацию через символику природы." />
+  <meta property="og:image" content="./assets/img/works/aiel-front.jpg" />
 
   <link rel="shortcut icon" href="./assets/img/favicon-32x32.png" type="image/x-icon" />
 
   <!-- Шрифты -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Golos+Text:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Golos+Text:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-  <!-- Направляющие артборда: фоновый слой -->
-  <div class="guides" aria-hidden="true">
-    <span></span><span></span><span></span><span></span><span></span>
-  </div>
-
   <!--==================== ШАПКА ====================-->
   <header class="header" id="header">
-    <nav class="nav">
-      <ul class="nav__group nav__group--left">
-        <li><a href="#about" class="nav__link">Обо мне</a></li>
-        <li><a href="#services" class="nav__link">Услуги</a></li>
-      </ul>
+    <nav class="nav container">
+      <a href="#top" class="nav__logo">Зарина Жанатаева</a>
 
-      <a href="#top" class="nav__logo">Zori Design</a>
-
-      <ul class="nav__group nav__group--right">
-        <li><a href="#work" class="nav__link">Портфолио</a></li>
+      <ul class="nav__group">
+        <li><a href="#works" class="nav__link">Работы</a></li>
+        <li><a href="#about" class="nav__link">Об авторе</a></li>
+        <li><a href="#order" class="nav__link">На заказ</a></li>
         <li><a href="#contact" class="nav__link">Контакты</a></li>
       </ul>
 
@@ -45,10 +42,11 @@
     <!-- Мобильное меню -->
     <div class="menu" id="nav-menu">
       <ul class="menu__list">
-        <li><a href="#about" class="menu__link">Обо мне</a></li>
-        <li><a href="#services" class="menu__link">Услуги</a></li>
-        <li><a href="#work" class="menu__link">Портфолио</a></li>
-        <li><a href="#experience" class="menu__link">Опыт</a></li>
+        <li><a href="#works" class="menu__link">Работы</a></li>
+        <li><a href="#interior" class="menu__link">В интерьере</a></li>
+        <li><a href="#about" class="menu__link">Об авторе</a></li>
+        <li><a href="#order" class="menu__link">Картина на заказ</a></li>
+        <li><a href="#buy" class="menu__link">Покупка и доставка</a></li>
         <li><a href="#contact" class="menu__link">Контакты</a></li>
       </ul>
     </div>
@@ -59,206 +57,423 @@
     <section class="hero">
       <div class="container hero__grid">
         <div class="hero__text">
-          <p class="eyebrow reveal">Графический дизайнер · Брендинг</p>
+          <p class="eyebrow reveal">Современная художница · Алматы</p>
           <h1 class="hero__title reveal">Зарина<br />Жанатаева</h1>
           <p class="hero__lead reveal">
-            Собираю визуальную упаковку бренда — от логотипа
-            до карточки товара на маркетплейсе. В дизайне и медиа с 2017 года.
+            Исследую женственность, внутреннюю силу и трансформацию
+            через символику природы. Работаю на стыке абстракции,
+            ботанических мотивов и современного символизма.
           </p>
-          <a href="#contact" class="cta reveal">Обсудить проект</a>
+          <div class="hero__actions reveal">
+            <a href="#works" class="cta">Смотреть работы</a>
+            <a href="https://wa.me/77473418628" class="cta cta--ghost" target="_blank" rel="noopener">Написать в WhatsApp</a>
+          </div>
         </div>
 
         <figure class="hero__figure reveal">
-          <img src="./assets/img/main_photo.jpeg" alt="Зарина Жанатаева, графический дизайнер" />
+          <img src="./assets/img/studio/hero.jpg" alt="Зарина Жанатаева в мастерской среди своих работ" width="2100" height="1400" />
         </figure>
       </div>
     </section>
 
-    <!--==================== ОБО МНЕ ====================-->
+    <!--==================== РАБОТЫ ====================-->
+    <section class="section section--works" id="works">
+      <div class="container">
+        <p class="eyebrow reveal">Живопись</p>
+        <h2 class="section__title reveal">Работы</h2>
+        <p class="section__lead reveal">
+          Каждая работа существует в единственном экземпляре.
+          Цена и наличие — по запросу в WhatsApp или Instagram.
+        </p>
+      </div>
+
+      <!-- Работа 1 -->
+      <article class="work container" id="work-aiel">
+        <div class="work__media">
+          <figure class="work__main reveal">
+            <img
+              src="./assets/img/works/aiel-front.jpg"
+              srcset="./assets/img/works/aiel-front-900.jpg 900w, ./assets/img/works/aiel-front.jpg 1600w"
+              sizes="(max-width: 900px) 100vw, 58vw"
+              alt="«Äiel küşı» — диптих с красной лилией" loading="lazy" />
+            <figcaption>Диптих целиком</figcaption>
+          </figure>
+
+          <div class="work__extra">
+            <figure class="reveal">
+              <img
+                src="./assets/img/works/aiel-detail-900.jpg"
+                srcset="./assets/img/works/aiel-detail-900.jpg 900w, ./assets/img/works/aiel-detail.jpg 1600w"
+                sizes="(max-width: 900px) 50vw, 28vw"
+                alt="«Äiel küşı» — фрагмент: тычинки с золотыми лицами" loading="lazy" />
+              <figcaption>Фрагмент</figcaption>
+            </figure>
+            <figure class="reveal">
+              <img
+                src="./assets/img/works/aiel-interior-900.jpg"
+                srcset="./assets/img/works/aiel-interior-900.jpg 900w, ./assets/img/works/aiel-interior.jpg 1600w"
+                sizes="(max-width: 900px) 50vw, 28vw"
+                alt="«Äiel küşı» в пространстве" loading="lazy" />
+              <figcaption>В пространстве</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="work__panel">
+          <div class="work__sticky">
+            <h3 class="work__title reveal">Äiel küşı</h3>
+            <p class="work__year reveal">2026 · Символизм</p>
+
+            <dl class="spec reveal">
+              <div><dt>Размер</dt><dd>120 × 80 см</dd></div>
+              <div><dt>Ориентация</dt><dd>Вертикальная</dd></div>
+              <div><dt>Техника</dt><dd>Живопись, диптих</dd></div>
+              <div><dt>Основа</dt><dd>Холст на подрамнике</dd></div>
+              <div><dt>Материалы</dt><dd>Акриловая краска, матовый лак, графитовый карандаш</dd></div>
+              <div><dt>Края холста</dt><dd>Не прокрашены</dd></div>
+            </dl>
+
+            <p class="work__desc reveal">
+              Диптих построен на противопоставлении цвета и его отсутствия —
+              как метафоры присутствия и утраты. Через образ красной лилии
+              исследуется само существование женщины как естественного
+              и определяющего начала: источника жизни, смысла, дыхания,
+              энергии, творчества и внутреннего баланса.
+            </p>
+
+            <p class="status status--free reveal">Доступна</p>
+            <a href="https://wa.me/77473418628?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B0%20%C2%ABÄiel%20küşı%C2%BB"
+               class="cta cta--small reveal" target="_blank" rel="noopener">Узнать цену</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Работа 2 -->
+      <article class="work container" id="work-november">
+        <div class="work__media">
+          <figure class="work__main reveal">
+            <img
+              src="./assets/img/works/november-front.jpg"
+              srcset="./assets/img/works/november-front-900.jpg 900w, ./assets/img/works/november-front.jpg 1600w"
+              sizes="(max-width: 900px) 100vw, 58vw"
+              alt="«November» — текстурная живопись" loading="lazy" />
+            <figcaption>Работа целиком</figcaption>
+          </figure>
+
+          <div class="work__extra">
+            <figure class="reveal">
+              <img
+                src="./assets/img/works/november-detail-900.jpg"
+                srcset="./assets/img/works/november-detail-900.jpg 900w, ./assets/img/works/november-detail.jpg 1600w"
+                sizes="(max-width: 900px) 50vw, 28vw"
+                alt="«November» — фактура текстурной пасты" loading="lazy" />
+              <figcaption>Фактура</figcaption>
+            </figure>
+            <figure class="reveal">
+              <img
+                src="./assets/img/works/november-interior-900.jpg"
+                srcset="./assets/img/works/november-interior-900.jpg 900w, ./assets/img/works/november-interior.jpg 1600w"
+                sizes="(max-width: 900px) 50vw, 28vw"
+                alt="«November» в пространстве" loading="lazy" />
+              <figcaption>В пространстве</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="work__panel">
+          <div class="work__sticky">
+            <h3 class="work__title reveal">November</h3>
+            <p class="work__year reveal">2025 · Абстракт</p>
+
+            <dl class="spec reveal">
+              <div><dt>Размер</dt><dd>80 × 70 см</dd></div>
+              <div><dt>Ориентация</dt><dd>Вертикальная</dd></div>
+              <div><dt>Техника</dt><dd>Текстурная живопись</dd></div>
+              <div><dt>Основа</dt><dd>Холст на подрамнике</dd></div>
+              <div><dt>Материалы</dt><dd>Текстурная паста, акриловая краска, матовый лак</dd></div>
+              <div><dt>Края холста</dt><dd>Прокрашены</dd></div>
+            </dl>
+
+            <p class="work__desc reveal">
+              Работа о смирении буйного характера, об умении пребывать
+              в терпении и принятии. Это болезненный переход
+              от саморефлексии к осознанности.
+            </p>
+
+            <p class="status status--free reveal">Доступна</p>
+            <a href="https://wa.me/77473418628?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B0%20%C2%ABNovember%C2%BB"
+               class="cta cta--small reveal" target="_blank" rel="noopener">Узнать цену</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Работа 3 -->
+      <article class="work container" id="work-earth">
+        <div class="work__media">
+          <figure class="work__main reveal">
+            <img
+              src="./assets/img/works/earth-front.jpg"
+              srcset="./assets/img/works/earth-front-900.jpg 900w, ./assets/img/works/earth-front.jpg 1600w"
+              sizes="(max-width: 900px) 100vw, 58vw"
+              alt="«Earth» — текстурная живопись, панно" loading="lazy" />
+            <figcaption>Работа целиком</figcaption>
+          </figure>
+
+          <div class="work__extra">
+            <figure class="reveal">
+              <img
+                src="./assets/img/works/earth-interior-900.jpg"
+                srcset="./assets/img/works/earth-interior-900.jpg 900w, ./assets/img/works/earth-interior.jpg 1600w"
+                sizes="(max-width: 900px) 50vw, 28vw"
+                alt="«Earth» в пространстве" loading="lazy" />
+              <figcaption>В пространстве</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="work__panel">
+          <div class="work__sticky">
+            <h3 class="work__title reveal">Earth</h3>
+            <p class="work__year reveal">2026 · Абстракт, панно</p>
+
+            <dl class="spec reveal">
+              <div><dt>Размер</dt><dd>80 × 60 см</dd></div>
+              <div><dt>Ориентация</dt><dd>Вертикальная</dd></div>
+              <div><dt>Техника</dt><dd>Текстурная живопись</dd></div>
+              <div><dt>Основа</dt><dd>Холст на подрамнике</dd></div>
+              <div><dt>Материалы</dt><dd>Текстурная паста, акриловая краска, матовый лак</dd></div>
+              <div><dt>Края холста</dt><dd>Прокрашены</dd></div>
+            </dl>
+
+            <p class="work__desc reveal">
+              Олицетворение цикла природы и плодородия.
+            </p>
+
+            <p class="status status--free reveal">Доступна</p>
+            <a href="https://wa.me/77473418628?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B0%20%C2%ABEarth%C2%BB"
+               class="cta cta--small reveal" target="_blank" rel="noopener">Узнать цену</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Работа 4 — ждём материалы -->
+      <article class="work work--empty container reveal" id="work-4">
+        <div class="tbd tbd--block">
+          <p class="tbd__label">Четвёртая работа</p>
+          <p>
+            Нужны фотографии и характеристики: название, год, серия, размер,
+            техника, основа, покрытие, края холста, статус, описание.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!--==================== В ИНТЕРЬЕРЕ ====================-->
+    <section class="section section--interior" id="interior">
+      <div class="container">
+        <p class="eyebrow reveal">Как это живёт в пространстве</p>
+        <h2 class="section__title reveal">В интерьере</h2>
+      </div>
+
+      <div class="gallery container">
+        <figure class="gallery__item reveal">
+          <img src="./assets/img/studio/wall-01-900.jpg"
+               srcset="./assets/img/studio/wall-01-900.jpg 900w, ./assets/img/studio/wall-01.jpg 1600w"
+               sizes="(max-width: 700px) 100vw, 33vw"
+               alt="Работы на стене светлой комнаты" loading="lazy" />
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="./assets/img/studio/hanging-900.jpg"
+               srcset="./assets/img/studio/hanging-900.jpg 900w, ./assets/img/studio/hanging.jpg 1200w"
+               sizes="(max-width: 700px) 100vw, 33vw"
+               alt="Художница выставляет красную работу у стены" loading="lazy" />
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="./assets/img/studio/lean-01-900.jpg"
+               srcset="./assets/img/studio/lean-01-900.jpg 900w, ./assets/img/studio/lean-01.jpg 1600w"
+               sizes="(max-width: 700px) 100vw, 33vw"
+               alt="Работы, стоящие у стены" loading="lazy" />
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="./assets/img/studio/hang-02-900.jpg"
+               srcset="./assets/img/studio/hang-02-900.jpg 900w, ./assets/img/studio/hang-02.jpg 1600w"
+               sizes="(max-width: 700px) 100vw, 33vw"
+               alt="Художница вешает работу на стену" loading="lazy" />
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="./assets/img/studio/chair-01-900.jpg"
+               srcset="./assets/img/studio/chair-01-900.jpg 900w, ./assets/img/studio/chair-01.jpg 1600w"
+               sizes="(max-width: 700px) 100vw, 33vw"
+               alt="Текстурная работа у стены рядом со стулом" loading="lazy" />
+        </figure>
+        <figure class="gallery__item reveal">
+          <img src="./assets/img/studio/stool-01-900.jpg"
+               srcset="./assets/img/studio/stool-01-900.jpg 900w, ./assets/img/studio/stool-01.jpg 1600w"
+               sizes="(max-width: 700px) 100vw, 33vw"
+               alt="Работы в светлой комнате рядом с табуретом" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <!--==================== ОБ АВТОРЕ ====================-->
     <section class="section section--about" id="about">
-      <span class="rail" aria-hidden="true">Обо мне</span>
       <div class="container about__grid">
-        <div class="about__bio">
-          <p class="eyebrow reveal">Кто я</p>
+        <figure class="about__figure reveal">
+          <img src="./assets/img/author/portrait.jpg"
+               srcset="./assets/img/author/portrait-900.jpg 900w, ./assets/img/author/portrait.jpg 1400w"
+               sizes="(max-width: 900px) 100vw, 38vw"
+               alt="Зарина Жанатаева" loading="lazy" />
+        </figure>
+
+        <div class="about__body">
+          <p class="eyebrow reveal">Об авторе</p>
+          <h2 class="section__title reveal">Зарина Жанатаева</h2>
+
           <p class="about__text reveal">
-            Здравствуйте! Меня зовут Зарина. Занимаюсь живописью, дизайном
-            и изучением медиапродвижения с 2017 года. Зная внутренние процессы
-            и имея опыт работы SMM-менеджером, я понимаю, насколько важен
-            проект для заказчика.
+            Исследую женственность, внутреннюю силу и трансформацию
+            через символику природы. Работаю на стыке абстракции,
+            ботанических мотивов и современного символизма.
           </p>
-          <p class="about__text reveal">
-            Я несу ответственность за качество и результат своей работы. Вывожу
-            бренды на новый уровень с помощью грамотной визуальной упаковки
-            и вкладываю в проект все свои знания и умения.
+
+          <div class="tbd reveal">
+            <p class="tbd__label">Биография</p>
+            <p>
+              Нужны два-три абзаца от автора: с чего началась живопись и когда,
+              образование, где выставлялась, есть ли работы в частных коллекциях.
+            </p>
+          </div>
+
+          <div class="facts">
+            <div class="fact reveal">
+              <p class="fact__label">Город</p>
+              <p class="fact__value">Алматы</p>
+            </div>
+            <div class="fact reveal">
+              <p class="fact__label">В живописи</p>
+              <p class="fact__value fact__value--tbd">год?</p>
+            </div>
+            <div class="fact reveal">
+              <p class="fact__label">Работ написано</p>
+              <p class="fact__value fact__value--tbd">?</p>
+            </div>
+            <div class="fact reveal">
+              <p class="fact__label">В коллекциях</p>
+              <p class="fact__value fact__value--tbd">?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container process">
+        <figure class="reveal">
+          <img src="./assets/img/author/process-01-900.jpg"
+               srcset="./assets/img/author/process-01-900.jpg 900w, ./assets/img/author/process-01.jpg 1400w"
+               sizes="(max-width: 700px) 50vw, 33vw"
+               alt="Художница переносит холст" loading="lazy" />
+        </figure>
+        <figure class="reveal">
+          <img src="./assets/img/author/process-02-900.jpg"
+               srcset="./assets/img/author/process-02-900.jpg 900w, ./assets/img/author/process-02.jpg 1400w"
+               sizes="(max-width: 700px) 50vw, 33vw"
+               alt="Художница в мастерской" loading="lazy" />
+        </figure>
+        <figure class="reveal">
+          <img src="./assets/img/author/process-03-900.jpg"
+               srcset="./assets/img/author/process-03-900.jpg 900w, ./assets/img/author/process-03.jpg 1400w"
+               sizes="(max-width: 700px) 50vw, 33vw"
+               alt="Художница с работой в мастерской" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+
+    <!--==================== КАРТИНА НА ЗАКАЗ ====================-->
+    <section class="section section--order" id="order">
+      <div class="container">
+        <p class="eyebrow reveal">Индивидуально</p>
+        <h2 class="section__title reveal">Картина на заказ</h2>
+
+        <div class="tbd reveal">
+          <p class="tbd__label">Весь раздел</p>
+          <p>
+            Нужно от автора: пишет ли под заказ; можно ли подобрать размер
+            и палитру под интерьер; этапы работы; сроки; размер предоплаты;
+            согласовывается ли эскиз до начала.
           </p>
-          <p class="signature reveal">Зарина</p>
         </div>
 
-        <aside class="about__facts">
-          <div class="fact reveal">
-            <p class="fact__label">Образование</p>
-            <p class="fact__value">Академия дизайна и технологии «Сымбат»</p>
-          </div>
-          <div class="fact reveal">
-            <p class="fact__label">В профессии</p>
-            <p class="fact__value">С 2017 года</p>
-          </div>
-          <div class="fact reveal">
-            <p class="fact__label">География</p>
-            <p class="fact__value">ОАЭ · Катар · Казахстан</p>
-          </div>
-          <figure class="about__mark reveal">
-            <img src="./assets/img/logo.png" alt="Академия дизайна и технологии «Сымбат»" />
-          </figure>
-        </aside>
+        <ol class="steps">
+          <li class="step reveal">
+            <p class="step__num">01</p>
+            <p class="step__name">Обсуждаем</p>
+            <p class="step__text tbd-inline">Что именно уточняем на этом шаге — ждём текст.</p>
+          </li>
+          <li class="step reveal">
+            <p class="step__num">02</p>
+            <p class="step__name">Эскиз</p>
+            <p class="step__text tbd-inline">Как согласовывается эскиз — ждём текст.</p>
+          </li>
+          <li class="step reveal">
+            <p class="step__num">03</p>
+            <p class="step__name">Работа</p>
+            <p class="step__text tbd-inline">Сроки и предоплата — ждём текст.</p>
+          </li>
+          <li class="step reveal">
+            <p class="step__num">04</p>
+            <p class="step__name">Доставка</p>
+            <p class="step__text tbd-inline">Упаковка и передача работы — ждём текст.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!--==================== УСЛУГИ ====================-->
-    <section class="section section--services" id="services">
-      <span class="rail" aria-hidden="true">Услуги</span>
+    <!--==================== ПОКУПКА И ДОСТАВКА ====================-->
+    <section class="section section--buy" id="buy">
       <div class="container">
-        <p class="eyebrow reveal">Чем помогу бренду</p>
-        <h2 class="section__title reveal">Что я делаю</h2>
+        <p class="eyebrow reveal">Условия</p>
+        <h2 class="section__title reveal">Покупка и доставка</h2>
 
-        <ul class="services">
-          <li class="service reveal">
-            <h3 class="service__name">Логотип</h3>
-            <p class="service__desc">Знак, который читается в аватарке и на вывеске одинаково хорошо.</p>
-          </li>
-          <li class="service reveal">
-            <h3 class="service__name">Фирменный стиль</h3>
-            <p class="service__desc">Палитра, шрифты, паттерны и правила — всё, чтобы бренд узнавали.</p>
-          </li>
-          <li class="service reveal">
-            <h3 class="service__name">Печатная продукция</h3>
-            <p class="service__desc">Визитки, сертификаты, бирки, упаковка — с подготовкой макетов в печать.</p>
-          </li>
-          <li class="service reveal">
-            <h3 class="service__name">Карточки для маркетплейсов</h3>
-            <p class="service__desc">Инфографика и карточки товаров для Wildberries и Ozon.</p>
-          </li>
-          <li class="service reveal">
-            <h3 class="service__name">Креативы для соцсетей</h3>
-            <p class="service__desc">Обложки, сторис и посты в единой визуальной системе.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!--==================== ПОРТФОЛИО ====================-->
-    <section class="section section--work" id="work">
-      <span class="rail" aria-hidden="true">Портфолио</span>
-      <div class="container work__head">
-        <p class="eyebrow reveal">Избранные проекты</p>
-        <h2 class="section__title reveal">Портфолио</h2>
-        <p class="work__hint reveal">Листайте вбок</p>
-      </div>
-
-      <div class="strip" id="strip">
-        <figure class="strip__item">
-          <img src="./assets/img/lilostore1.jpeg" alt="Lilo Store — фирменный стиль" loading="lazy" />
-          <figcaption>Lilo Store <i>Фирменный стиль</i></figcaption>
-        </figure>
-        <figure class="strip__item">
-          <img src="./assets/img/lilostore3.jpeg" alt="Lilo Store — визуальная система" loading="lazy" />
-          <figcaption>Lilo Store <i>Визуальная система</i></figcaption>
-        </figure>
-        <figure class="strip__item">
-          <img src="./assets/img/kepler1.jpeg" alt="Kepler — логотип" loading="lazy" />
-          <figcaption>Kepler <i>Логотип</i></figcaption>
-        </figure>
-        <figure class="strip__item">
-          <img src="./assets/img/kepler2.jpeg" alt="Kepler — носители фирменного стиля" loading="lazy" />
-          <figcaption>Kepler <i>Носители стиля</i></figcaption>
-        </figure>
-        <figure class="strip__item">
-          <img src="./assets/img/trendsetter1.jpeg" alt="Trendsetter — брендинг" loading="lazy" />
-          <figcaption>Trendsetter <i>Брендинг</i></figcaption>
-        </figure>
-        <figure class="strip__item">
-          <img src="./assets/img/trendsetter3.jpeg" alt="Trendsetter — печатная продукция" loading="lazy" />
-          <figcaption>Trendsetter <i>Печатная продукция</i></figcaption>
-        </figure>
-        <figure class="strip__item">
-          <img src="./assets/img/trendsetter4.jpeg" alt="Trendsetter — упаковка" loading="lazy" />
-          <figcaption>Trendsetter <i>Упаковка</i></figcaption>
-        </figure>
-        <figure class="strip__item">
-          <img src="./assets/img/trendsetter5.jpeg" alt="Trendsetter — соцсети" loading="lazy" />
-          <figcaption>Trendsetter <i>Соцсети</i></figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!--==================== ОПЫТ ====================-->
-    <section class="section section--exp" id="experience">
-      <span class="rail" aria-hidden="true">Опыт</span>
-      <div class="container">
-        <p class="eyebrow reveal">Где работала</p>
-        <h2 class="section__title reveal">Опыт</h2>
-
-        <div class="exp">
-          <article class="exp__item reveal">
-            <p class="exp__meta">ОАЭ · Дубай</p>
-            <p class="exp__text">
-              Графический дизайнер в сфере медицины. Работа с дизайнером
-              и основателем QLIVE Company — компании, выпустившей официальную
-              лицензионную продукцию к Чемпионату мира по футболу 2022.
-            </p>
-          </article>
-          <article class="exp__item reveal">
-            <p class="exp__meta">Катар</p>
-            <p class="exp__text">
-              Магазин мультибрендовой детской одежды и онлайн-магазин
-              премиальных сумок и часов.
-            </p>
-          </article>
-          <article class="exp__item reveal">
-            <p class="exp__meta">2019 — 2023 · SMM</p>
-            <p class="exp__text">
-              MOST Hub, MOST Ventures, MOST Business Incubator, Elements Agency,
-              Shopogolik.kz, Trip&amp;I.
-            </p>
-          </article>
+        <div class="cards">
+          <div class="card reveal">
+            <h3 class="card__title">Оплата</h3>
+            <p>Visa и MasterCard.</p>
+            <p class="tbd-inline">Как проходит оплата на практике — ждём уточнение.</p>
+          </div>
+          <div class="card reveal">
+            <h3 class="card__title">Доставка</h3>
+            <p>По Казахстану и международная.</p>
+            <p class="tbd-inline">Сроки и кто оплачивает доставку — ждём уточнение.</p>
+          </div>
+          <div class="card reveal">
+            <h3 class="card__title">Упаковка</h3>
+            <p class="tbd-inline">Как упаковывается работа для перевозки — ждём текст.</p>
+          </div>
+          <div class="card reveal">
+            <h3 class="card__title">Возврат</h3>
+            <p class="tbd-inline">Есть ли возврат и на каких условиях — ждём текст.</p>
+          </div>
         </div>
       </div>
     </section>
-
-    <!--
-      ==================== ОТЗЫВЫ (готовый блок) ====================
-      Раскомментируйте, когда появятся реальные отзывы.
-      Скриншоты положите в assets/img/ и подставьте пути.
-
-    <section class="section section--reviews" id="reviews">
-      <span class="rail" aria-hidden="true">Отзывы</span>
-      <div class="container">
-        <p class="eyebrow">Что говорят клиенты</p>
-        <h2 class="section__title">Отзывы</h2>
-        <div class="strip">
-          <figure class="strip__item">
-            <img src="./assets/img/review1.jpg" alt="Отзыв клиента" loading="lazy" />
-            <figcaption>Имя клиента <i>Проект</i></figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-    -->
   </main>
 
   <!--==================== КОНТАКТЫ ====================-->
   <footer class="footer" id="contact">
-    <span class="rail" aria-hidden="true">Контакты</span>
     <div class="container footer__grid">
       <div class="footer__left">
-        <p class="eyebrow reveal">Свободна для проектов</p>
-        <h2 class="footer__title reveal">Расскажите<br />о своём проекте</h2>
-        <a href="https://www.instagram.com/zarina.zhanatayeva/" class="cta reveal" target="_blank" rel="noopener">Написать в Instagram</a>
+        <p class="eyebrow reveal">Свободна для новых работ</p>
+        <h2 class="footer__title reveal">Напишите<br />о своей идее</h2>
+        <a href="https://wa.me/77473418628" class="cta reveal" target="_blank" rel="noopener">Написать в WhatsApp</a>
       </div>
 
       <div class="footer__right">
-        <p class="footer__label reveal">Или загляните в профиль</p>
+        <p class="footer__label reveal">Способы связи</p>
         <ul class="socials reveal">
+          <li>
+            <a href="https://wa.me/77473418628" target="_blank" rel="noopener">
+              <img src="./assets/img/whatsapp.svg" alt="" aria-hidden="true" />
+              <span>WhatsApp</span>
+            </a>
+          </li>
           <li>
             <a href="https://www.instagram.com/zarina.zhanatayeva/" target="_blank" rel="noopener">
               <img src="./assets/img/instagram.svg" alt="" aria-hidden="true" />
@@ -270,7 +485,7 @@
     </div>
 
     <div class="container footer__bottom">
-      <span class="footer__mark">Zori Design</span>
+      <span class="footer__mark">Зарина Жанатаева</span>
       <span class="footer__copy">© <span id="year">2026</span></span>
     </div>
   </footer>
